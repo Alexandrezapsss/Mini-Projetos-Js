@@ -14,3 +14,6 @@
 ## 3 - Ideias para Otimizar esse Mini Projeto💡💡
 * mais medidas a serem implementadas
 * otimizar o CSS
+
+## Preview deste Mini Projeto
+![alt text](image.png)
