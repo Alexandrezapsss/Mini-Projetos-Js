@@ -11,3 +11,46 @@ body {
     max-width: 500px;
     padding: 1.6rem;
 }
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+input, select{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 0.6rem;
+    padding: 0.4rem;
+    width: 100%;
+}
+
+button {
+    border-radius: 4px;
+    background-color: greenyellow;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.4rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover{
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+input:disabled {
+    background-color: #f2f2f2;
+    color: #777;
+}
+
