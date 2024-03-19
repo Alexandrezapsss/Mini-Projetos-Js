@@ -1,0 +1,21 @@
+* {
+    font-family: Helvetica;
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem;
+}
+
+.container{
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 1rem;
+     max-width: 800px;
+     margin: 0 auto;
+}
+.card {
+    border: 1px solid red;
+    position: relative;
+    height: 200px;
+}
