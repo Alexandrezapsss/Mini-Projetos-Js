@@ -32,4 +32,26 @@ async function createCards(){
 
     //no momento da criação dos cards vamos chamar a função para embaralhar os mesmos
     shuffleCards(cards)
+    const cardList = document.querySelector(".container")
+    //agora vamos usar o for para percorer a nossa lista de cards
+    for(let i = 0; i < cards ; i++){
+        //criar os elementos de cards
+        const card = document.createElement("div")
+        const cardBack = document.createElement("div")
+        const cardFront = document.createElement("div")
+
+        //agora que criamos nossos elemntos de card vamos criar a classe para trabalhar com elas
+        card.classList.add("card")
+        cardBack.classList.add("back")
+        cardFront.classList.add("front")
+
+        //vamos colocar a imagem de carta virada na classe back
+        cardBack.style.backgroundImage = `url('img/card-back.png')`;
+
+        //vamos definir a imagem da frente do cartão vamos pegar da API então pegamos o indice da carta atual para isso
+        const cardNumber = cards[i]
+        const cardsImage = imagePairs[cardNumber].pop()
+
+        cardFront.style.backgroundImage(`url(${cardsImage})`)
+    }
 }
